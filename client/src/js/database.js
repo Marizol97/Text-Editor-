@@ -31,10 +31,10 @@ export const getDb = async () =>  {
     const db = await openDB('jate',1);
     const tx = db.transaction('jate', 'readonly');
     const store = tx.objectStore('jate');
-    const request = store.getAll();
+    const request = store.get(1);
     const result = await request;
     console.log('Text has been retrieved from the database.', result);
-    return result;
+    return result?.value;
   } catch (error) {
     console.error(error);
   }
