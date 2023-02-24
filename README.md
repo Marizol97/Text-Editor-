@@ -23,7 +23,6 @@ HTML/CSS,
 IndexedDB,
 idb,
 Webpack,
-Workbox,
 Express.js,
 Heroku
 
